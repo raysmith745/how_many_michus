@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <form class="number-field">
+    <form class="number-field" onsubmit='return false'>
       <input type="number" class="field" placeholder="Enter a number of £">
       <ul class="results">
         <li class="text">This is how many Michus you could buy...</li>
@@ -16,14 +16,13 @@
       const numberField = document.querySelector('.field');
       const resultsText = document.querySelector('.text');
 
-      function howManyMichus(number) {
+      function howManyMichus() {
         const michuValue = 2310000;
-        const worth = number / michuValue;
-        console.log(`For that much you could have bought ${worth} Michus!`);
+        const worth = this.value / michuValue;
         resultsText.innerText = `For that much you could have bought ${worth} Michus!`;
       }
 
-      numberField.addEventListener('change', howManyMichus);
+      numberField.addEventListener('keyup', howManyMichus);
     </script>
   </body>
 </html>
