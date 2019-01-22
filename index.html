@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>How many Michus?</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form class="number-field">
+      <input type="number" class="field" placeholder="Enter a number of £">
+      <ul class="results">
+        <li class="text">This is how many Michus you could buy...</li>
+      </ul>
+    </form>
+    <script>
+      const numberField = document.querySelector('.field');
+      const resultsText = document.querySelector('.text');
+
+      function howManyMichus(number) {
+        const michuValue = 2310000;
+        const worth = number / michuValue;
+        console.log(`For that much you could have bought ${worth} Michus!`);
+        resultsText.innerText = `For that much you could have bought ${worth} Michus!`;
+      }
+
+      numberField.addEventListener('change', howManyMichus);
+    </script>
+  </body>
+</html>
