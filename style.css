@@ -1,5 +1,33 @@
 html {
   background: url(michu.jpg);
   background-size: cover;
-  color: gold;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+content {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+input.field {
+  transform: translate(50%, 50%);
+}
+
+div.text {
+  transform: translate(50%, 50%);
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }
