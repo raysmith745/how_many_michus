@@ -2,6 +2,7 @@ html {
   background: url(michu.jpg);
   background-size: cover;
   height: 100%;
+  color: gold;
 }
 
 body {
@@ -20,10 +21,12 @@ content {
 
 input.field {
   transform: translate(50%, 50%);
+  flex-direction: column;
 }
 
 div.text {
   transform: translate(50%, 50%);
+  flex-direction: column;
 }
 
 input[type=number]::-webkit-inner-spin-button, 
