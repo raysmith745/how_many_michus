@@ -25,7 +25,8 @@ input.field {
 }
 
 div.text {
-  transform: translate(50%, 50%);
+  margin: 5% 5% 5% 0;
+  padding-left: 5%;
   flex-direction: column;
 }
 
